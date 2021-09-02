@@ -1,0 +1,1 @@
+{"name":"Local: Kadane's_Algo","url":"d:\\GitHub\\First\\HackerRank\\Kadane's_Algo.cpp","tests":[{"id":1630608291499,"input":"1\n5\n4 -5 -2 3 1","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\GitHub\\First\\HackerRank\\Kadane's_Algo.cpp","group":"local","local":true}
