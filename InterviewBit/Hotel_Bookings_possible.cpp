@@ -1,24 +1,25 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool hotel(vector<int> &arrive, vector<int> &depart, int K) {
-    int n = depart.size();
-    int count = 0, tr;
-    bool ans = 1;
-    tr = depart[0];
-    for(int i=1;i<=n;i++){
-        if(tr>arrive[i]){
-            count++;
+int hotel(vector<int> &arrive, vector<int> &depart, int K) {
+    sort(arrive.begin(),arrive.end());
+    sort(depart.begin(),depart.end());
+    int i=0,j=0,count=0;
+    while(i<arrive.size() && j<depart.size())
+    {
+        if(arrive[i]<depart[j]){
+           count++;
+           i++;
         }
-        else if(tr<=arrive[i]){
-            tr = depart[i];
+        else{ 
+            count--;
+            j++;
+        }
+        if(count>K){
+            return false;
         }
     }
-    if(count>K){
-        ans = 0;
-    }
-
-    return ans;
+    return true;
 }
 
 int main(){
