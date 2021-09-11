@@ -8,7 +8,7 @@ class Solution{
         vector <int> ans;
         int x = mat.size();
         if(x==0){
-            return ans; 
+            return ans;  
         }
         int sum = (2*x) - 2;
         int count = 0;
@@ -41,7 +41,6 @@ int main()
     {
         int n;
         int k=0;
-        //cin>>k;
         cin>>n;
         vector<vector<int>>mat(n, vector<int>(n));
         for(int i = 0; i < n; i++){
@@ -53,7 +52,6 @@ int main()
         vector<int>ans = obj.matrixDiagonally(mat);
         for(auto i: ans)cout << i << " ";
         cout << "\n";
-        
-       
+        return 0;       
     }
 }
