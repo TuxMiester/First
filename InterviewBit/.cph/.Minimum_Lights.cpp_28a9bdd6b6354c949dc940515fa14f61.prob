@@ -1,0 +1,1 @@
+{"name":"Local: Minimum_Lights","url":"d:\\GitHub\\First\\InterviewBit\\Minimum_Lights.cpp","tests":[{"id":1631472674193,"input":"5 3\n0 0 0 1 0","output":"-1"},{"id":1631472702326,"input":"8 3\n0 0 1 1 1 0 0 1","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\GitHub\\First\\InterviewBit\\Minimum_Lights.cpp","group":"local","local":true}
