@@ -2,31 +2,20 @@
 using namespace std;
 int main(){
     int t;
-    string s;
+    int n,k;
     cin>>t;
     while(t--){
-        int a[26]={0};
-        int sum=0;
-        cin>>s;
-        bool b=false;
-        for(int i=0;i<s.size();i++){
-            a[s[i]-'a']++;
+        cin>>n>>k;
+        int a[n];
+        for(int i=0;i<n;i++){
+            cin>>a[i];
         }
-        for(int i=0;i<26;i++){
-            sum=sum+a[i];
+        int mn=INT_MAX;
+        sort(a,a+n);
+        for(int i=0;i<n-k-1;i++){
+            mn=min(mn,abs(a[i]-a[i+k-1]));
         }
-        for(int i=0;i<26;i++){
-            if(a[i]==sum-a[i]){
-                cout<<"YES"<<endl;
-                b=true;
-                break;
-            }
- 
-        }
-        if(!b)
-        {
-            cout<<"NO\n";
-        }
+        cout<<mn<<endl;
     }
     return 0;
 }
